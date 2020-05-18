@@ -1,0 +1,16 @@
+apiVersion : apps/v1beta1
+kind: Deployment
+metadata:
+  name: skumarsahkspipeline 
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: skumarsahkspipeline 
+    spec:
+      containers:
+        - name: skumarsahkspipeline 
+          image: k8creg.azurecr.io/skumarsahkspipeline
+          ports:
+          - containerPort: 8080
