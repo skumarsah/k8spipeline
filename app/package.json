@@ -1,8 +1,8 @@
 {
   "name": "my_app",
   "version": "1.0.0",
-  "description": "Sample used for container templates",
-  "author": "Shashank Barsin",
+  "description": "A Nodejs Container for Web App.",
+  "author": "Santosh Kumar Sah",
   "main": "server.js",
   "scripts": {
     "start": "node server.js"
