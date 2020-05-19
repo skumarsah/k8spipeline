@@ -11,9 +11,5 @@ app.use(app.router);
 app.get('/', (req, res) => {
   res.send('Congratulations! The Pipeline is Ready');
 });
-app.get('/nodejs', (req, res) => {
-  res.redirect('https://www.magicsqaure.games')
-});
-
 app.listen(PORT, HOST);
 console.log(`Running on http://${HOST}:${PORT}`);
