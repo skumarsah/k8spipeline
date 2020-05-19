@@ -7,7 +7,10 @@ const HOST = '0.0.0.0';
 
 const app = express();
 app.get('/', (req, res) => {
-  res.redirect('index.html');
+  res.send('Congratulations! The Pipeline is Ready');
+});
+app.get('/nodejs', (req, res) => {
+  res.redirect('index.html')
 });
 
 app.listen(PORT, HOST);
